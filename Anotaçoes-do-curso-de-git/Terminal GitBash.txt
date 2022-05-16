@@ -1,0 +1,123 @@
+Em um terminal, coloca-se o nome do programa para poder usar
+algum comando atrelado a ele
+
+https://git-scm.com/docs/git/pt_BR (site sobre os comandos git)
+---------------------------------------------
+
+git init -> iniciar repositório do Git
+(iniciar branch)
+
+---------------------------------------------
+
+git add -> mover arquivos e começar o
+processo de versionamento
+
+---------------------------------------------
+
+git commit
+
+---------------------------------------------
+
+ls -a -> mostra arquivos ocultos dentro do atual diretório
+-a (mostrar arquivos ocultos) .<nome do arquivo> é um arquivo oculto
+
+---------------------------------------------
+
+Crtl+l -> limpa terminal do Git
+
+-----------------------------------------------
+
+git config user.name -> Ver qual o nome do usuário registrado
+git config user.email -> Ver qual o e-mail registrado
+
+git config --global unset user.email -> descadastra o email salvo
+git config --global unset user.name -> descadastra o nome salvo
+
+git config --global user.email "<email>" -> cadastra email aos commits
+git config --global user.name "<nome>" -> cadastra nome aos commits
+
+-----------------------------------------------
+
+mv (move)
+mv strogonoff.md ./receitas -> mover arquivo strogonoff.md
+para a pasta receitas
+
+-----------------------------------------------
+
+git status -> checar o que ocorreu na branch
+
+-----------------------------------------------
+
+git add strogonoff.md receitas/ -> adicionar ao status staged
+
+-----------------------------------------------
+
+git restore --staged strogonoff.md receitas/ -> voltar para o status untracked
+
+------------------------------------------------
+
+git commit -m "cria pasta receitas, move arquivo para receitas"
+-m (colocar mensagem)
+
+https://git-scm.com/docs/git-commit/pt_BR
+
+
+--------------------------------------------------
+
+echo> README.md (cria um arquivo no diretório/pasta atual)
+
+---------------------------------------------------
+
+git add * -> pega todas as mudanças (untracked) que estão no meu atual diretório
+de trabalho e deixam elas no status staged
+
+----------------------------------------------------
+
+git remote add origin <HTTPS do repositório remoto GitHub> -> monstrando aonde eu devo colocar os arquivos
+presentes no repositório local, isto é, passando de repositório local para remoto
+
+---------------------------------------------------
+
+git remote -v -> mostra as listas de repositórios remotos cadastrados
+
+---------------------------------------------------
+
+git push origin master -> ele empurra a branch master do repositório local
+para o repositório remoto (HTTP do repositório no GitHub)
+
+---------------------------------------------------
+
+git pull origin master -> puxa o repositório remoto para o repositório local
+e tenta dar uma merge (unir ambos)
+
+merge conflict <nome do arquivo>
+Se vc modificar esse arquivo em específico, quando
+você digitar git status, aparecerá
+both modified : <nome do arquivo>
+
+há a modificação do pull e a sua nova modificação
+
+git add * -> se for digitado na sequência, adicionará
+a sua última alteração
+
+-----------------------------------------------------
+
+git clone <HTTPS do repositório remoto no GitHub>
+Adiciona pasta que estava no GitHub para o o seu diretório/pasta de trabalho atual
+
+cd <nome do repositório>
+ls -a
+Se tiver .git, é um repositório
+Se não tiver .git como arquivo oculto, então é uma pasta
+
+Se tiver .git e eu digitar o comando
+git remote -v -> ele vai me informar para onde as informações a serem commitadas irão
+ser armazenadas
+
+------------------------------------------------------------
+cd <nome do repositório para se deletar>
+
+git rm -rf .git -> deleta o arquivo .git desse repositório,
+transformando ele em pasta
+
+rm -r <nome do ex-repositório> -> deleta a pasta

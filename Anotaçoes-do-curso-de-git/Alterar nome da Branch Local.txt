@@ -1,0 +1,7 @@
+https://www.hostinger.com.br/tutoriais/renomear-branch-git
+
+git checkout nome-antigo (seleciona a branch que se deseja mudar o nome)
+git branch -m novo-nome (renomeia a branch selecionada)
+
+git branch --list (só branchs locais)
+git branch -a (branchs locais e remotas)

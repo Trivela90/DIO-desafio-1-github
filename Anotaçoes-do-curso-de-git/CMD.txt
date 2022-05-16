@@ -1,0 +1,66 @@
+dir
+(nos mostra a lista de diretórios
+ que há na pasta atual)
+
+ls (Linux ou Git Bash)
+
+--------------------------------------------
+
+cd (change directory)
+cd / -> ele vai para a pasta geral C:
+
+C:\>* -> se eu digitar dir aqui *, ele
+me retornará todas a pastas dentro de
+C:
+
+C:\>Emuladores -> Agora estamos na pasta Emuladores
+
+C:\Emuladores>cd .. -> cd .. (cd e 2 .(ponto) na sequência,
+eu volto à pasta anterior (retorno ao conjunto externo)
+
+-------------------------------------------------------------
+
+cls -> clear screen (limpar tela do terminal)
+
+-------------------------------------------------------------
+
+Clicar no Botão TAB (atalho TAB) ->
+completa o nome da pasta ou do arquivo a que quero me referir
+
+-------------------------------------------------------------
+
+mkdir (make directory)
+mkdir <nome da pasta> -> comando para criar nova pasta
+
+
+-------------------------------------------------------------
+
+echo (Eco)
+echo -> Não ocupa espaço. Só é um print na tela do terminal
+
+C:\echo Hello >hello.txt
+* >hello.txt -> A > indica onde eu devo armazenar comando anterior *
+e, se o local indicado não existir, ele também cria.
+
+Cuidado: se você tiver algo armazenado no arquivo, ele será
+totalmente substituido pelo conteudo * do comando *>arquivo
+
+--------------------------------------------------------------------
+
+del (deletar)
+C:\>del <nome da pasta dentro de C:> -> deleta todos os arquivos dentro
+da pasta <nome da pasta dentro de C:>
+
+OBS: ele de os arquivos da pasta, não a pasta
+
+-------------------------------------------------------------------------
+
+rmdir (remove directory)
+C:\rmdir <nome do diretório/pasta> -> deleta uma pasta em específico, contida
+no repositório C:
+
+C:\rmdir <pasta> /S -> deleta a pasta em específico e todos os subdiretórios (subpastas)
+e arquivos dentro dela, também.
+
+C:\rmdir <pasta> /S /Q -> faz tudo que o comando anterior faz, mas com uma diferença:
+/Q força a exclusão sem que o sistema peça confirmação (S/N) para tal
